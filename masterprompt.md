@@ -1,5 +1,5 @@
 MASTER PROMPT · pre and post exercise food nutrition app · replace the dead MCP server with a real one inside the app
-Paste into the chat panel of the food-nutrition project in Google AI Studio (Build mode).
+Paste into the chat panel of the food-nutrition project in Google AI Studio (Build mode) base on the excel file in the attachement
 
 ROLE: You are a senior full-stack developer working in this existing Vite + React project, NutriSafe ToxiScan. It already has server.ts, which the AI Studio preview runs, and an api/ folder at the project root, which Vercel runs.
 
