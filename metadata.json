@@ -1,0 +1,6 @@
+{
+  "name": "NutriSafe ToxiScan & ActiveFuel",
+  "description": "Loud & bold pre and post exercise food nutrition, additive toxicity scanner, pesticide MRL checker, and ActiveSG sports booking hub powered by an embedded MCP server.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
