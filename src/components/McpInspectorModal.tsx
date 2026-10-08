@@ -191,13 +191,18 @@ export const McpInspectorModal: React.FC<McpInspectorModalProps> = ({ isOpen, on
             </div>
           )}
 
-          {/* Notice */}
-          <div className="p-3 bg-neutral-900 border border-neutral-800 text-[11px] text-neutral-400 space-y-1">
+          {/* Notice & Upstream Config */}
+          <div className="p-3 bg-neutral-900 border border-neutral-800 text-[11px] text-neutral-400 space-y-1.5">
             <p className="font-bold text-neutral-300">MCP Streamable HTTP Protocol Conformance:</p>
             <p>
               External MCP agents (Claude Code, MCP Inspector, Gemini SDK) connect directly to{' '}
               <code className="text-lime-400 font-mono">POST /api/mcp</code> using JSON-RPC 2.0 with header{' '}
               <code className="text-lime-400 font-mono">MCP-Protocol-Version: 2025-11-25</code>.
+            </p>
+            <p className="pt-1 text-neutral-400 border-t border-neutral-800">
+              <strong className="text-lime-400">Upstream NutriBalance Bridge:</strong> Configured via server-side{' '}
+              <code className="text-white font-mono bg-black px-1">NUTRITION_API_KEY</code> to connect with{' '}
+              <span className="text-neutral-300 font-mono">NutriBalance/nutribalance-mcp</span> over <code className="text-lime-400 font-mono">/api/nutribalance</code>.
             </p>
           </div>
         </div>

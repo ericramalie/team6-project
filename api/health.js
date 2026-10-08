@@ -7,6 +7,7 @@ export default function handler(req, res) {
     mcpPath: MCP_PATH,
     serverInfo: SERVER_INFO,
     dataset: DATASET,
+    nutribalanceConnected: Boolean(process.env.NUTRITION_API_KEY),
     timestamp: new Date().toISOString()
   }));
 }

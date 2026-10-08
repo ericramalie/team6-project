@@ -154,3 +154,12 @@ git push https://[REDACTED_GITHUB_TOKEN]@github.com/ericramalie/team6-project.gi
 the main objective is the food delivery to vending machine at all exercise venue and gym, put that objective in main page
 ```
 
+---
+
+## Prompt 5: NutriBalance Upstream API Key
+
+```
+create NUTRITION_API_KEY to connect to NutriBalance/nutribalance-mcp server
+```
+
+
