@@ -110,8 +110,8 @@ export const AdditiveDirectory: React.FC<AdditiveDirectoryProps> = ({ onRouteTab
 
   return (
     <div className="space-y-10">
-      {/* Hero Visual Spotlight */}
-      <div className="relative border-2 border-neutral-700 bg-neutral-950 overflow-hidden shadow-2xl">
+      {/* Core Platform Objective: Food Delivery to Vending Machines at All Gyms & Venues */}
+      <div className="relative border-2 border-lime-400 bg-neutral-950 overflow-hidden shadow-2xl">
         <div className="absolute inset-0 z-0 opacity-30 mix-blend-luminosity">
           <img
             src="/src/assets/images/istock_healthy_meal_prep.jpg"
@@ -119,58 +119,159 @@ export const AdditiveDirectory: React.FC<AdditiveDirectoryProps> = ({ onRouteTab
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/85 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-black/60" />
         </div>
 
-        <div className="relative z-10 p-6 sm:p-10 max-w-4xl">
-          <div className="inline-block px-3 py-1 bg-lime-400 text-black text-xs font-black uppercase tracking-widest mb-4">
-            TOXISCAN · MCP RECOVERY ENGINE
+        <div className="relative z-10 p-6 sm:p-10 max-w-5xl">
+          {/* Main Objective Badge */}
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-lime-400 text-black text-xs font-black uppercase tracking-widest mb-4 border border-white shadow-[2px_2px_0px_#ffffff]">
+            <span>★ CORE OBJECTIVE</span>
+            <span>·</span>
+            <span>FOOD DELIVERY TO SMART VENDING MACHINES AT ALL EXERCISE VENUES & GYMS</span>
           </div>
-          <h1 className="text-3xl sm:text-5xl font-black uppercase tracking-tight text-white leading-none">
-            FOOD ADDITIVE <span className="text-lime-400">TOXICITY & SAFETY</span> DOSSIER
+
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black uppercase tracking-tight text-white leading-none">
+            HEALTHY FOOD DELIVERY TO <span className="text-lime-400">VENDING MACHINES</span> AT ALL EXERCISE VENUES & GYMS
           </h1>
-          <p className="mt-4 text-sm sm:text-base text-neutral-300 max-w-2xl leading-relaxed font-medium">
-            Inspect individual E-numbers, chemical stabilizers, and artificial sweeteners against regulatory bans and toxicological mechanisms via our local Streamable HTTP MCP server.
+
+          <p className="mt-4 text-sm sm:text-base lg:text-lg text-neutral-200 max-w-3xl leading-relaxed font-medium">
+            Healthy food at your fingertips, without the hassle of meal prepping alone. Nutritionist-designed hot and cold post-workout meals, prepared fresh in certified central kitchens and delivered directly to automated smart vending lockers situated at every ActiveSG sports complex, arena, and gym in Singapore.
           </p>
 
-          {/* Search Form */}
-          <form onSubmit={handleSearchSubmit} className="mt-6 flex flex-col sm:flex-row gap-2 max-w-2xl">
-            <div className="relative flex-1">
-              <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-neutral-400" />
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search E-number (e.g. E211, E171), CAS (532-32-1), or name (MSG, Palm Oil)..."
-                className="w-full pl-10 pr-4 py-3 bg-neutral-900 border-2 border-neutral-600 focus:border-lime-400 text-white placeholder-neutral-500 text-sm font-semibold focus:outline-none"
-              />
+          {/* 3 Core Objective Pillars */}
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="p-4 bg-neutral-900/90 border-2 border-neutral-700 backdrop-blur-sm">
+              <span className="text-[10px] uppercase font-mono font-bold text-lime-400">01 · VENUE DISPATCH</span>
+              <h3 className="text-sm font-black uppercase text-white mt-1">Delivery to All Gyms</h3>
+              <p className="text-xs text-neutral-300 mt-1 leading-relaxed">
+                Central kitchens dispatch fresh hot & chilled recovery meals daily to ActiveSG sports halls, gym entrances, and court venues.
+              </p>
             </div>
-            <button
-              type="submit"
-              disabled={additiveLoading}
-              className="px-6 py-3 bg-lime-400 text-black font-black uppercase tracking-wider text-xs border-2 border-white shadow-[2px_2px_0px_#ffffff] hover:bg-white active:translate-x-0.5 active:translate-y-0.5 transition-all cursor-pointer whitespace-nowrap disabled:opacity-50"
-            >
-              {additiveLoading ? 'INSPECTING...' : 'RUN MCP CHECK'}
-            </button>
-          </form>
 
-          {/* Smart Suggestions with intelligent router */}
-          <div className="mt-4 flex flex-wrap items-center gap-1.5 text-xs text-neutral-400">
-            <span className="font-bold uppercase text-[11px] text-neutral-300">Quick Query:</span>
-            {suggestions.map((s, idx) => (
-              <button
-                key={idx}
-                type="button"
-                onClick={() => {
-                  setSearchQuery(s.query);
-                  executeAdditiveCheck(s.query);
-                }}
-                className="px-2 py-0.5 bg-neutral-900 border border-neutral-700 hover:border-lime-400 text-neutral-200 hover:text-white font-mono text-[11px] cursor-pointer transition-colors"
+            <div className="p-4 bg-neutral-900/90 border-2 border-neutral-700 backdrop-blur-sm">
+              <span className="text-[10px] uppercase font-mono font-bold text-lime-400">02 · GRAB-AND-GO LOCKERS</span>
+              <h3 className="text-sm font-black uppercase text-white mt-1">Contactless Pod Pickup</h3>
+              <p className="text-xs text-neutral-300 mt-1 leading-relaxed">
+                Hot thermal warming lockers and cold shakers. Reserve with your court booking and pick up via PIN/QR immediately after training.
+              </p>
+            </div>
+
+            <div className="p-4 bg-neutral-900/90 border-2 border-neutral-700 backdrop-blur-sm">
+              <span className="text-[10px] uppercase font-mono font-bold text-lime-400">03 · MCP TOXISCAN & MACROS</span>
+              <h3 className="text-sm font-black uppercase text-white mt-1">Zero Toxins, Pure Macros</h3>
+              <p className="text-xs text-neutral-300 mt-1 leading-relaxed">
+                Every meal formulation is audited against additive toxicity, banned substances, and sports recovery macros via local MCP.
+              </p>
+            </div>
+          </div>
+
+          {/* Quick Objective CTAs */}
+          <div className="mt-6 flex flex-wrap items-center gap-3">
+            <button
+              type="button"
+              onClick={() => onRouteTab('activesg')}
+              className="px-6 py-3.5 bg-lime-400 text-black font-black uppercase tracking-wider text-xs border-2 border-white shadow-[3px_3px_0px_#ffffff] hover:bg-white active:translate-x-0.5 active:translate-y-0.5 transition-all cursor-pointer"
+            >
+              LOCATE & RESERVE AT GYM VENDING LOCKER &rarr;
+            </button>
+            <button
+              type="button"
+              onClick={() => onRouteTab('nutrition')}
+              className="px-6 py-3.5 bg-neutral-900 hover:bg-neutral-800 text-white font-black uppercase tracking-wider text-xs border-2 border-neutral-600 transition-colors cursor-pointer"
+            >
+              EXPLORE PRE/POST EXERCISE MACROS &rarr;
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Live Venue Vending Machine Network Status Bar */}
+      <div className="border-2 border-neutral-700 bg-neutral-900 p-4 sm:p-5">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div className="flex items-center gap-2">
+            <span className="w-3 h-3 bg-lime-400 animate-pulse rounded-full shrink-0" />
+            <div>
+              <p className="text-xs font-black uppercase tracking-wider text-white">
+                LIVE EXERCISE VENUE VENDING NETWORK · SINGAPORE
+              </p>
+              <p className="text-[11px] text-neutral-400">
+                Fresh restock synchronized with certified cloud kitchens & OneMap delivery routing
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-2 text-xs">
+            {[
+              { venue: 'Clementi ActiveSG', stock: '24 Meals' },
+              { venue: 'Bishan Sports Hall', stock: '18 Meals' },
+              { venue: 'Our Tampines Hub', stock: '32 Meals' },
+              { venue: 'Jurong West Gym', stock: '20 Meals' },
+              { venue: 'Bedok Sports Complex', stock: '15 Meals' }
+            ].map((v, i) => (
+              <div
+                key={i}
+                onClick={() => onRouteTab('activesg')}
+                className="px-2.5 py-1 bg-black border border-neutral-700 hover:border-lime-400 text-neutral-300 hover:text-white font-mono text-[11px] cursor-pointer transition-colors flex items-center gap-1.5"
               >
-                {s.label}
-              </button>
+                <span>{v.venue}</span>
+                <span className="text-lime-400 font-bold">({v.stock})</span>
+              </div>
             ))}
           </div>
+        </div>
+      </div>
+
+      {/* MCP Additive Toxicity & Ingredient Inspection Search */}
+      <div className="border-2 border-neutral-700 bg-neutral-950 p-6 sm:p-8">
+        <div className="max-w-3xl">
+          <span className="inline-block px-2.5 py-1 bg-neutral-800 text-lime-400 text-[11px] font-mono font-bold uppercase tracking-wider mb-2 border border-neutral-700">
+            MCP PURITY AUDIT · TOXISCAN ENGINE
+          </span>
+          <h2 className="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white">
+            INSPECT ADDITIVES & MEAL INGREDIENTS VIA MCP
+          </h2>
+          <p className="mt-1 text-xs sm:text-sm text-neutral-400 leading-relaxed">
+            Verify every food additive, chemical stabilizer, and sweetener found in commercial foods or sports supplements against regulatory bans and toxicological mechanisms via our embedded Streamable HTTP MCP server.
+          </p>
+        </div>
+
+        {/* Search Form */}
+        <form onSubmit={handleSearchSubmit} className="mt-5 flex flex-col sm:flex-row gap-2 max-w-2xl">
+          <div className="relative flex-1">
+            <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-neutral-400" />
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="Search E-number (e.g. E211, E171), CAS (532-32-1), or name (MSG, Palm Oil)..."
+              className="w-full pl-10 pr-4 py-3 bg-neutral-900 border-2 border-neutral-600 focus:border-lime-400 text-white placeholder-neutral-500 text-sm font-semibold focus:outline-none"
+            />
+          </div>
+          <button
+            type="submit"
+            disabled={additiveLoading}
+            className="px-6 py-3 bg-lime-400 text-black font-black uppercase tracking-wider text-xs border-2 border-white shadow-[2px_2px_0px_#ffffff] hover:bg-white active:translate-x-0.5 active:translate-y-0.5 transition-all cursor-pointer whitespace-nowrap disabled:opacity-50"
+          >
+            {additiveLoading ? 'INSPECTING...' : 'RUN MCP CHECK'}
+          </button>
+        </form>
+
+        {/* Smart Suggestions with intelligent router */}
+        <div className="mt-4 flex flex-wrap items-center gap-1.5 text-xs text-neutral-400">
+          <span className="font-bold uppercase text-[11px] text-neutral-300">Quick Query:</span>
+          {suggestions.map((s, idx) => (
+            <button
+              key={idx}
+              type="button"
+              onClick={() => {
+                setSearchQuery(s.query);
+                executeAdditiveCheck(s.query);
+              }}
+              className="px-2 py-0.5 bg-neutral-900 border border-neutral-700 hover:border-lime-400 text-neutral-200 hover:text-white font-mono text-[11px] cursor-pointer transition-colors"
+            >
+              {s.label}
+            </button>
+          ))}
         </div>
       </div>
 

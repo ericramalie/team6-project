@@ -145,3 +145,12 @@ git push https://[REDACTED_GITHUB_TOKEN]@github.com/ericramalie/team6-project.gi
 2) replace all image attachment with relevant images from this website https://www.istockphoto.com/
 3) create api/health.js located at project.main
 ```
+
+---
+
+## Prompt 4: Main Objective Highlighting
+
+```
+the main objective is the food delivery to vending machine at all exercise venue and gym, put that objective in main page
+```
+

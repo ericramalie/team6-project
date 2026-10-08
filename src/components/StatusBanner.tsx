@@ -34,6 +34,10 @@ export const StatusBanner: React.FC<StatusBannerProps> = ({ onRefresh, isRefresh
                 <Database className="w-3 h-3 text-neutral-400" />
                 <span>Dataset: <strong className="text-white font-mono">22</strong> Additives / <strong className="text-white font-mono">12</strong> Nutrition / <strong className="text-white font-mono">8</strong> Pesticides (<strong className="text-white font-mono">42</strong> total)</span>
               </span>
+              <span aria-hidden="true">·</span>
+              <span className="hidden lg:inline text-lime-400 font-bold uppercase tracking-wider">
+                Objective: Food Delivery to Vending Pods at All Gyms & Venues
+              </span>
             </div>
           </div>
 

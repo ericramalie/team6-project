@@ -1,6 +1,6 @@
 {
   "name": "NutriSafe ToxiScan & ActiveFuel",
-  "description": "Loud & bold pre and post exercise food nutrition, additive toxicity scanner, pesticide MRL checker, and ActiveSG sports booking hub powered by an embedded MCP server.",
+  "description": "Healthy food delivery to smart vending machines at all exercise venues and gyms, with pre & post workout nutrition, additive toxicity scanner, and ActiveSG booking hub.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

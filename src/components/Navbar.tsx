@@ -41,7 +41,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             </div>
             <div>
               <span className="text-xl sm:text-2xl font-black tracking-tight text-white uppercase font-sans">
-                NUTRISAFE <span className="text-lime-400 font-extrabold">ACTIVEFUEL</span>
+                NUTRISAFE <span className="text-lime-400 font-extrabold">ACTIVEFUEL</span> <span className="hidden sm:inline text-xs font-mono font-bold text-neutral-400">· GYM VENDING DELIVERY</span>
               </span>
             </div>
           </button>
