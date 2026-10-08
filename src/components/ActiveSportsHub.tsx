@@ -100,8 +100,8 @@ export const ActiveSportsHub: React.FC<ActiveSportsHubProps> = ({ onSelectMealFo
       <div className="relative border-2 border-neutral-700 bg-neutral-950 overflow-hidden shadow-2xl">
         <div className="absolute inset-0 z-0 opacity-25 mix-blend-luminosity">
           <img
-            src="/src/assets/images/sports_court_active_1791435481370.jpg"
-            alt="ActiveSG Sports Arena"
+            src="/src/assets/images/istock_badminton_court.jpg"
+            alt="ActiveSG Badminton Sports Arena Court (iStockphoto)"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
           />
@@ -296,8 +296,8 @@ export const ActiveSportsHub: React.FC<ActiveSportsHubProps> = ({ onSelectMealFo
 
           <div className="relative h-44 overflow-hidden border border-neutral-800">
             <img
-              src="/src/assets/images/vending_activesg_pod_1791435464098.jpg"
-              alt="ActiveFuel Smart Vending Pod"
+              src="/src/assets/images/istock_vending_machine.jpg"
+              alt="ActiveFuel Smart Vending Dispenser (iStockphoto)"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
             />

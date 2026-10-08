@@ -114,8 +114,8 @@ export const AdditiveDirectory: React.FC<AdditiveDirectoryProps> = ({ onRouteTab
       <div className="relative border-2 border-neutral-700 bg-neutral-950 overflow-hidden shadow-2xl">
         <div className="absolute inset-0 z-0 opacity-30 mix-blend-luminosity">
           <img
-            src="/src/assets/images/hero_active_nutrition_1791435453256.jpg"
-            alt="Athletic Nutrition & Fuel"
+            src="/src/assets/images/istock_healthy_meal_prep.jpg"
+            alt="Healthy Sports Nutrition Meal Prep (iStockphoto)"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
           />
